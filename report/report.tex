@@ -1,0 +1,106 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{lscape}
+\usepackage{braket}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{fancyhdr}
+\usepackage[headheight = 2cm,bottom=3.5cm]{geometry}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[L]{\includegraphics[height=1.5cm]{logoe2m.jpg}} 
+\fancyhead[C]{\textsc{Mechanical conception and geometrical optimization\\of a car carbon fiber bodywork\\}}
+\fancyhead[R]{}
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[C]{} 
+\fancyfoot[L]{Simon Froelicher\\ Baptiste Legouix\\ Tutor : Cedric Laurent}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+\title{\textsc{PFE report} \\
+\vspace{10pt}\hspace*{-30pt}\begin{tabular}{cc}
+\multirow{4}{*}{
+\begin{minipage}{0.25\textwidth}\vspace{15pt}\includegraphics[scale=0.53]{logoensem.png}\end{minipage}\hspace{-10pt}} & \rule{0.8\linewidth}{0.5pt}\vspace{10pt} \\ & Mechanical conception and geometrical optimization \\ &  of a car carbon fiber bodywork \\ & \rule{0.8\linewidth}{2pt}
+\end{tabular}}
+\author{Simon Froelicher\\ Baptiste Legouix\\ Tutor : Cedric Laurent}
+%\date{\today\\[30pt] \huge \ccbynd}
+\date{\today}
+
+\clearpage
+\maketitle
+\thispagestyle{empty}
+
+\tableofcontents
+\newpage
+
+\setcounter{page}{1}
+
+\section{Solid mechanical modeling}
+
+\subsection{Theory of composite materials}
+
+Fondamentaux de MMC + relations mathématiques qui permettent de caractériser les matériaux carbone (monolithique et sandwich), tenant compte de leurs symétries.
+
++ Etude de résistance du matériau \textcolor{red}{(à éclaircir)}.
+
+\subsection{Determination of stiffness matrices}
+
+Essais mécaniques et relation entre les mesures et les coefficients de la matrice de raideur.
+
++ Essais de rupture.
+
+\subsection{Finite element resolution}
+
+\subsubsection{Computational solid mechanics}
+
+Optionnel
+
+\subsubsection{Static analysis}
+
+Etude statique sous AnSys.
+
+\subsubsection{Transcient analysis}
+
+Etude fréquentielle ou transitoire, sur la base de mesures accélérométriques \textcolor{red}{(non-réalisées, donc à estimer ?)}.
+
+\section{Aerodynamic modeling}
+
+\subsection{Theory of fluid dynamics}
+
+Fondamentaux
+
+\subsection{Finite element resolution}
+
+\subsubsection{Computational fluid dynamics}
+
+Optionnel
+
+\subsubsection{Analysis of laminar flow}
+
+Détermination du $C_x$ et $C_z$ sous AnSys.
+
+\subsubsection{Analysis of turbulent flow}
+
+Idem
+
+\section{Composite bodywork design}
+
+\subsection{Specifications}
+
+Lister les contraintes imposées par les règles
+
+\subsection{Complete modeling based on finite element results}
+
+Comment estimer les pertes à partir des deux simulations (solide et fluide) ? En les effectuant indépendamment puis en mettant des poids sur leurs pertes respectives, ou en effectuant le calcul fluide suivi du calcul solide prenant en compte les pressions calculées ? 
+
+\subsection{Design choices}
+
+\section{Geometrical optimization}
+
+\end{document}

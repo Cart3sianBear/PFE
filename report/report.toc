@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Solid mechanical modeling}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Theory of composite materials}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Determination of stiffness matrices}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Finite element resolution}{1}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Computational solid mechanics}{1}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Static analysis}{1}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}Transcient analysis}{1}{subsubsection.1.3.3}
+\contentsline {section}{\numberline {2}Aerodynamic modeling}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Theory of fluid dynamics}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Finite element resolution}{1}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Computational fluid dynamics}{1}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Analysis of laminar flow}{1}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Analysis of turbulent flow}{1}{subsubsection.2.2.3}
+\contentsline {section}{\numberline {3}Composite bodywork design}{1}{section.3}
+\contentsline {subsection}{\numberline {3.1}Specifications}{1}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Complete modeling based on finite element results}{2}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Design choices}{2}{subsection.3.3}
+\contentsline {section}{\numberline {4}Geometrical optimization}{2}{section.4}
