@@ -1,18 +1,22 @@
 \BOOKMARK [1][-]{section.1}{Solid mechanical modeling}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Theory of composite materials}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Determination of stiffness matrices}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Finite element resolution}{section.1}% 4
-\BOOKMARK [3][-]{subsubsection.1.3.1}{Computational solid mechanics}{subsection.1.3}% 5
-\BOOKMARK [3][-]{subsubsection.1.3.2}{Static analysis}{subsection.1.3}% 6
-\BOOKMARK [3][-]{subsubsection.1.3.3}{Transcient analysis}{subsection.1.3}% 7
-\BOOKMARK [1][-]{section.2}{Aerodynamic modeling}{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{Theory of fluid dynamics}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.2}{Finite element resolution}{section.2}% 10
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Computational fluid dynamics}{subsection.2.2}% 11
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Analysis of laminar flow}{subsection.2.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Analysis of turbulent flow}{subsection.2.2}% 13
-\BOOKMARK [1][-]{section.3}{Composite bodywork design}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Specifications}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Complete modeling based on finite element results}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Design choices}{section.3}% 17
-\BOOKMARK [1][-]{section.4}{Geometrical optimization}{}% 18
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Continuum mechanics}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Monolitic composite}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Sandwitch-structured composite}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.4}{Laminated composite}{subsection.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.2}{Determination of stiffness matrices}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.3}{Finite element resolution}{section.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Computational solid mechanics}{subsection.1.3}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Static analysis}{subsection.1.3}% 10
+\BOOKMARK [3][-]{subsubsection.1.3.3}{Transcient analysis}{subsection.1.3}% 11
+\BOOKMARK [1][-]{section.2}{Aerodynamic modeling}{}% 12
+\BOOKMARK [2][-]{subsection.2.1}{Theory of fluid dynamics}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.2}{Finite element resolution}{section.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Computational fluid dynamics}{subsection.2.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Analysis of laminar flow}{subsection.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Analysis of turbulent flow}{subsection.2.2}% 17
+\BOOKMARK [1][-]{section.3}{Composite bodywork design}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Specifications}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Complete modeling based on finite element results}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Design choices}{section.3}% 21
+\BOOKMARK [1][-]{section.4}{Geometrical optimization}{}% 22

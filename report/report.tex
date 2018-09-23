@@ -49,6 +49,174 @@ Fondamentaux de MMC + relations mathématiques qui permettent de caractériser l
 
 + Etude de résistance du matériau \textcolor{red}{(à éclaircir)}.
 
+\hrulefill
+
+\subsubsection{Continuum mechanics}
+
+La dynamique locale d'un milieu continu est décrite en mécanique par la relation suivante, assimilable à la seconde loi de Newton :
+
+\[
+\vec{f}=\rho\frac{\partial^2 \vec{u}}{\partial t^2}
+\]
+
+Où $\vec{f}$ est la force volumique appliquée sur un élément infinitésimal du milieu et $\vec{u}$ son déplacement par rapport à l'état initial considéré (généralement l'état où chaque élément est dans un référentiel inertiel, c'est-à-dire avant qu'on n'envisage l'application des forces).
+
+Le problème de cette représentation est qu'elle n'est pas complètement locale, au sens où $\vec{u}$ n'est pas une grandeur infinitésimale (au contraire de $\vec{f}$. Il faudra y remédier, mais gardons ça pour plus tard.
+
+La continuité du milieu est assurée par des forces que s'appliquent mutuellement les éléments. Ces forces (volumiques) sont d'une autre nature que les éventuels forces extérieures $\vec{f}_s$ ($s$ pour\emph{source}), et s'écrivent comme la divergence d'un tenseur de rang deux $\sigma$ appellé \emph{tenseur des contraintes de Cauchy} :
+
+\[
+\nabla\cdot\underline{\underline{\sigma}}+\vec{f}_s=\rho\frac{\partial^2 \vec{u}}{\partial t^2}
+\]
+
+Montrons que la conservation du moment cinétique implique la symétrie de ce tenseur.
+
+On écrit d'abord (sans démonstration) un bilan de moment cinétique sur un domaine quelconque :
+
+\[
+\frac{d}{dt}\iiint\vec{x}\times\rho\frac{\partial \vec{u}}{\partial t}\; dV=\iiint\vec{x}\times\vec{f}_s \; dV+\iint\vec{x}\times\underline{\underline{\sigma}}\; \vec{dS}
+\]
+
+Si l'on souhaite accéder à une version locale, il nous faut transformer l'intégrale de surface en intégrale de volume, dans l'idée :
+
+\[
+\frac{d}{dt}\iiint\vec{x}\times\rho\frac{\partial \vec{u}}{\partial t}\; dV=\iiint\vec{x}\times\vec{f}_s \; dV+\iiint\nabla\cdot(\vec{x}\times\underline{\underline{\sigma}})\; dV
+\]
+
+Néanmoins, le produit vectoriel d'un vecteur par une matrice n'est pas conventionnel à ma connaissance. On peut cependant définir ce dernier comme :
+
+\[
+\vec{v}\times \underline{\underline{M}} = \varepsilon_{ikl}v_kM_{jl}
+\]
+
+\textcolor{red}{(distinction indices covariants/contravariants ?)}
+
+Où est noté $\varepsilon$ le \emph{symbole de Levi-Civita}. En adoptant cette définition, la décomposition suivante devient valide :
+
+\[
+\iiint\nabla\cdot(\vec{x}\times\underline{\underline{\sigma}})\; \vec{dV} = \iiint\nabla\vec{x}\times\underline{\underline{\sigma}}\; \vec{dV}+\iiint\vec{x}\times\nabla\cdot\underline{\underline{\sigma}}\; \vec{dV}
+\]
+
+\[
+\iiint\nabla\cdot(\vec{x}\times\underline{\underline{\sigma}})\; \vec{dV} = \iiint\underline{\underline{I}}\times\underline{\underline{\sigma}}\; \vec{dV}+\iiint\vec{x}\times\nabla\cdot\underline{\underline{\sigma}}\; \vec{dV}
+\]
+
+Où $\underline{\underline{I}}\times\underline{\underline{\sigma}}$ n'a de sens que si l'on définit :
+
+\[
+\underline{\underline{M}}\times\underline{\underline{N}}=\epsilon_{ikl}M_{kj}N_{jl}
+\]
+
+On vérifie la décomposition proposée en écrivant explicitement :
+
+\[
+\frac{\partial}{\partial x_j}(\varepsilon_{ikl}x_k\sigma_{jl}) = \varepsilon_{ikl}\frac{\partial x_k}{\partial x_j}\sigma_{jl}+ \varepsilon_{ikl}x_k\frac{\partial\sigma_{jl}}{\partial x_j}
+\]
+
+On trouve finalement (hypothèse du fluide incompressible appliquée) :
+
+\[
+\iiint\left(\vec{x}\times\rho\frac{\partial^2 \vec{u}}{\partial t^2}-\vec{x}\times\vec{f}_s -\underline{\underline{I}}\times\underline{\underline{\sigma}}-\vec{x}\times\nabla\cdot\underline{\underline{\sigma}}\right)\; dV=0
+\]
+
+Ceci étant vrai $\forall V$, on abouti à la relation locale :
+
+\[
+\vec{x}\times\left(\rho\frac{\partial^2 \vec{u}}{\partial t^2}-\vec{f}_s -\nabla\cdot\underline{\underline{\sigma}}\right)-\underline{\underline{I}}\times\underline{\underline{\sigma}}=0
+\]
+
+Mais d'après la relation dont nous sommes partis, on remarque que la quantité dans les parenthèses s'annule ! Autrement dit :
+
+\[
+\underline{\underline{I}}\times\underline{\underline{\sigma}}=0
+\]
+
+Ou encore :
+
+\[
+\varepsilon_{ikl}\delta_{kj}\sigma_{jl} = 0
+\]
+
+\[
+\varepsilon_{ikl}\sigma_{kl} = 0
+\]
+
+Connaissant la structure algébrique de $\varepsilon$, il est inévitable que :
+
+\[
+\sigma_{ij} = \sigma_{ji}
+\]
+
+La question de la modélisation locale des efforts structurels par le tenseur des contraintes étant traitée, revenons maintenant à la transformation :
+
+\[
+\vec{x} \rightarrow \vec{x'} = \vec{x}+\vec{u}
+\]
+
+Pour écrire la déformation subie par un élément :
+
+\[
+dx'_i = \frac{\partial x'_i}{\partial x_j}dx_j
+\]
+
+\[
+dx'_i = \left(\frac{\partial x_i}{\partial x_j}+\frac{\partial u_i}{\partial x_j}\right)dx_j
+\]
+
+\[
+dx'_i = \left(\delta_{ij}+\frac{\partial u_i}{\partial x_j}\right)dx_j
+\]
+
+A ce stade vient naturellement l'envie de considérer le tenseur de rang deux $\underline{\underline{F}}=\underline{\underline{I}}+\nabla u$ comme objet caractérisant une déformation, et de définir l'élasticité sur la base de celui-ci. Pourtant, nous préfèrerons utiliser \textcolor{red}{(pourquoi ?)} le tenseur suivant, que nous qualifierons de \emph{tenseur des déformations} :
+
+\[
+\underline{\underline{\varepsilon}}=\underline{\underline{F}}^\top\underline{\underline{F}}-\underline{\underline{I}}
+\]
+
+Manifestement symétrique, et autrement écrit :
+
+\[
+\underline{\underline{\varepsilon}} = (\nabla u)^\top + \nabla u + (\nabla u)^\top\nabla u
+\]
+
+De façon à ce que :
+
+\[
+\vec{dx}^\top \underline{\underline{\varepsilon}} \; \vec{dx} = \vec{dx}^\top (\underline{\underline{F}}^\top\underline{\underline{F}}-\underline{\underline{I}}) \; \vec{dx}
+\]
+
+\[
+\vec{dx}^\top \underline{\underline{\varepsilon}} \; \vec{dx} = ||\vec{dx'}||^2 -||\vec{dx}||^2
+\]
+
+Nous avons les deux tenseurs qu'il nous faut pour pouvoir introduire l'objet qui caractérisera finalement le matériau qu'on voudra considérer.
+
+Un solide sera décrit en mécanique par sa \emph{loi de comportement} qui lit $\sigma$ à $\epsilon$. Dans tout ce rapport, nous n'emploierons que la \emph{loi de Hooke} qui s'applique aux régimes linéaires :
+
+\[
+\underline{\underline{\sigma}}=\underline{\underline{\underline{\underline{C}}}}\;
+\underline{\underline{\varepsilon}}
+\]
+
+Le tenseur $\underline{\underline{\underline{\underline{C}}}}$ est de rang quatre, mais du fait qu'il conserve la symétrie du tenseur de rang deux qu'on lui donne, toute l'information qu'il contient peut-être contenue dans une matrice $6\times 6$ :
+
+\[
+\left(\begin{matrix}
+\sigma_{11} \\ \sigma_{22} \\ \sigma_{33} \\ \sigma_{23} \\ \sigma_{13} \\ \sigma_{12} \\\end{matrix}\right) = \underline{\underline{C}}
+\left(\begin{matrix}
+\varepsilon_{11} \\ \varepsilon_{22} \\ \varepsilon_{33} \\ \varepsilon_{23} \\ \varepsilon_{13} \\ \varepsilon_{12} \\\end{matrix}\right)
+\]
+
+On appelle cette réduction de l'ordre du problème le passage à la \emph{notation de Voigt}.
+
+Cette matrice $6\times 6$ caractérise donc entièrement un matériau, en toute généralité (à ceci près qu'on se restreint au domaine linéaire).
+
+\subsubsection{Monolitic composite}
+
+\subsubsection{Sandwitch-structured composite}
+
+\subsubsection{Laminated composite}
+
 \subsection{Determination of stiffness matrices}
 
 Essais mécaniques et relation entre les mesures et les coefficients de la matrice de raideur.
