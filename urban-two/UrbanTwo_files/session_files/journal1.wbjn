@@ -1,0 +1,54 @@
+# encoding: utf-8
+# Release 19.1
+SetScriptVersion(Version="19.1.103")
+fileType1 = GetFileType(Name="GeometryFileType")
+ImportFile(
+    FilePath="/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/cad/urban_two/carrosserie.SLDPRT",
+    FileType=fileType1)
+system1 = GetSystem(Name="Geometry")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+system1.Delete()
+ImportFile(
+    FilePath="/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/cad/urban_two/carrosserie3.igs",
+    FileType=fileType1)
+system2 = GetSystem(Name="Geometry")
+geometry2 = system2.GetContainer(ComponentName="Geometry")
+geometry2.Edit()
+Save(Overwrite=True)
+system2.DisplayText = "Urban Two"
+system3 = system2.Duplicate(RelativeTo=system2)
+system2.DisplayText = "Urban Two Filled"
+system3.DisplayText = "Urban Two"
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry2.Exit()
+system3.Move(
+    Position="Below",
+    RelativeTo=system2)
+system2.Move(
+    Position="Right",
+    RelativeTo=system3)
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system4 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+geometryComponent1 = system4.GetComponent(Name="Geometry")
+geometryComponent2 = system2.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system2)
+meshComponent1 = system4.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system4.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+Save(Overwrite=True)
+mesh1.Exit()
+setup1 = system4.GetContainer(ComponentName="Setup")
+fluentLauncherSettings1 = setup1.GetFluentLauncherSettings()
+fluentLauncherSettings1.SetEntityProperties(Properties=Set(Dimension="ThreeD", EnvPath={}))
+setup1.Edit()
+mesh1.Edit()
+Save(Overwrite=True)

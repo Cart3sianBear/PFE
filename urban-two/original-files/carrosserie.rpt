@@ -1,0 +1,67 @@
+*****************************************************************
+      SolidWorks Corporation - Compte-rendu d'état du Processeur IGES
+*****************************************************************
+=================================================================
+Informations générales
+=================================================================
+Envoi de l'identification du produit système en cours  : Carrosserie
+Réception de l'identification du produit système en cours: Carrosserie
+Nom de fichier                    : carrosserie.igs
+Envoi du système en cours               : DASSAULT SYSTEMES CATIA Version 5-6 Release 2013 - www.3ds.com
+Version du préprocesseur         : V5-6R2013_5.23.0.0.10-18-2012.20.00
+Date de création du fichier           : 20160324.215316
+Date de création du modèle          : 20160324.215316
+Unités                        : MM
+Echelle de l'espace modèle            : 1
+Auteur                       : Jerome
+Organisation                 : Jerome-PC
+
+
+=================================================================
+Informations sur le traitement des entités
+=================================================================
+
+
+=================================================================
+Analyse de précision d'un fichier IGES:
+=================================================================
+  Nombre le plus répandu de chiffres significatifs:              10
+  Nombre le plus grand de chiffres significatifs:                     10
+  Nombre moyen de chiffres significatifs :                 9.8623
+  Distance maximale jusqu'à l'origine:                          4737.49
+  Distance minimale jusqu'à l'origine:                                0
+  Nombre effectif de chiffres significatifs:                   10
+
+
+=================================================================
+Récapitulatif des entités
+=================================================================
+-----------------------------------------------------------------
+Nom de type                                         Nombre converti
+---- ----                                         ----- ---------
+100  Arc                                              4         4
+102  Composite curve                                 29        29
+108  Plane                                            1         1
+110  Line                                            87        87
+124  Transformation matrix                            4         4
+126  Rational B-spline curve                        190       190
+128  Rational B-spline surface                       13        13
+142  Curve on a parametric surface                   14        14
+144  Trimmed parametric surface                      14        14
+314  Color definition                                 1         1
+406  Property                                         4         4
+_________________________________________________________________
+
+
+=================================================================
+Récapitulatif des résultats
+=================================================================
+Type de fonction SolidWorks                Nombre
+-----------------------                -----
+Fonction(s) volumique(s)                       0
+Fonction(s) surfacique(s)                     2
+Fonction(s) de courbe/d'esquisse                0
+--------------------------------------------
+Heure de début: jeudi, mars 24, 2016 22:00:05
+Heure de fin: jeudi, mars 24, 2016 22:00:10
+Durée de traitement: 0 days, 00 hours, 00 mins, 05 secs
