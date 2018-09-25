@@ -213,6 +213,38 @@ Cette matrice $6\times 6$ caractérise donc entièrement un matériau, en toute 
 
 \subsubsection{Monolitic composite}
 
+La désignation \emph{composite monolitique} s'oppose à \emph{composite stratifié}, ce dernier étant constitué de couches différemments orientées.
+
+La matrice de raideur d'un tel composite s'écrit dans son repère principal (base propre du tenseur des contraintes) :
+
+\[
+\underline{\underline{C}}=\left(\begin{matrix}
+C_{11} & C_{12} & C_{13} & 0 & 0 & 0 \\
+C_{12} & C_{22} & C_{23} & 0 & 0 & 0 \\
+C_{13} & C_{23} & C_{33} & 0 & 0 & 0 \\
+0 & 0 & 0 & C_{44} & 0 & 0 \\
+0 & 0 & 0 & 0 & C_{55} & 0 \\
+0 & 0 & 0 & 0 & 0 & C_{66}
+\end{matrix}\right)
+\]
+
+Ces neuf coefficients sont en bijection avec les grandeurs estimées lors d'essais visants à caractériser le matériau : les trois modules d'Young, les trois coefficients de Poisson et les trois modules de cisaillement.
+
+En dehors des directions principales, on doit effectuer une transformation linéaire pour trouver \textcolor{red}{(démonstration)} :
+
+\[
+\underline{\underline{C'}}=\left(\begin{matrix}
+C'_{11} & C'_{12} & C'_{13} & 0 & 0 & C'_{16} \\
+C'_{12} & C'_{22} & C'_{23} & 0 & 0 & C'_{26} \\
+C'_{13} & C'_{23} & C'_{33} & 0 & 0 & C'_{36} \\
+0 & 0 & 0 & C'_{44} & 0 & 0 \\
+0 & 0 & 0 & 0 & C'_{55} & 0 \\
+C'_{16} & C'_{26} & C'_{36} & 0 & 0 & C'_{66}
+\end{matrix}\right)
+\]
+
+Avec des relations algébriques entre les coefficients précédents et ceux-ci, aucun degré de liberté excédentaire n'étant en fait introduit. 
+
 \subsubsection{Sandwitch-structured composite}
 
 \subsubsection{Laminated composite}
