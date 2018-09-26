@@ -1,0 +1,56 @@
+# encoding: utf-8
+# Release 19.1
+SetScriptVersion(Version="19.1.103")
+system1 = GetSystem(Name="CFX")
+system1.Delete()
+template1 = GetTemplate(TemplateName="Geometry")
+system2 = GetSystem(Name="FFF")
+system3 = template1.CreateSystem(
+    Position="Left",
+    RelativeTo=system2)
+system4 = GetSystem(Name="Geometry")
+geometryComponent1 = system4.GetComponent(Name="Geometry")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.TransferData(TargetComponent=geometryComponent2)
+geometryComponent1.DeleteTransfer(TargetComponent=geometryComponent2)
+template2 = GetTemplate(TemplateName="External Data")
+system5 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system3)
+system5.Delete()
+componentTemplate1 = GetComponentTemplate(Name="GeometryCellTemplate")
+system6 = template1.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=geometryComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    RelativeTo=system4)
+system6.Delete()
+template3 = GetTemplate(TemplateName="Mechanical APDL")
+system7 = template3.CreateSystem(
+    Position="Left",
+    RelativeTo=system3)
+system7.Delete()
+system8 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system3)
+template4 = GetTemplate(TemplateName="Forte")
+system9 = template4.CreateSystem(
+    Position="Below",
+    RelativeTo=system8)
+system9.Delete()
+system8.Delete()
+template5 = GetTemplate(TemplateName="System Coupling")
+system10 = template5.CreateSystem(
+    Position="Below",
+    RelativeTo=system3)
+system10.Delete()
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+system11 = system4.Duplicate(RelativeTo=system4)
+system3.Delete()
+system11.DisplayText = "Urban Two +"
+system11.DisplayText = "Urban Two + Air"
+system11.DisplayText = "Urban Two Filled + Air"
+geometry2 = system11.GetContainer(ComponentName="Geometry")
+geometry2.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)

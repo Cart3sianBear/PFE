@@ -10,7 +10,7 @@
     <Addin Name="Ansys.DesignModeler.Core.Addin" Version="17.1.1.0" />
   </Addins>
   <Containers>
-    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Geometry": Ansys.DesignModeler.Core.Addin:Geometry, "Geometry 1": Ansys.DesignModeler.Core.Addin:Geometry, "Mesh": Ansys.Meshing.Core.Addin:SimulationModel, "Setup": Ansys.Fluent.Addin:SetupContainer, "Solution": Ansys.Fluent.Addin:SolutionContainer, "Results": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer}</container-map>
+    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Geometry": Ansys.DesignModeler.Core.Addin:Geometry, "Geometry 1": Ansys.DesignModeler.Core.Addin:Geometry, "Mesh": Ansys.Meshing.Core.Addin:SimulationModel, "Setup": Ansys.Fluent.Addin:SetupContainer, "Solution": Ansys.Fluent.Addin:SolutionContainer, "Results": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Geometry 4": Ansys.DesignModeler.Core.Addin:Geometry}</container-map>
     <static-container-ids valType="String">{"Scopes": Scopes}</static-container-ids>
     <Container Name="Scopes" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:scopes</container-type>
@@ -32,7 +32,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">2105</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2322, "Input": 2102, "Output": 2102}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3466, "Input": 2102, "Output": 2102}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <unique-system-dir valType="String">Geom</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -42,18 +42,13 @@
         <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": "dp0/Geom/DM/Geom.agdb", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": $$13e6ed53-2208-4f4d-a7c4-874c996d1791, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": True, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "", "GeometryImportCadAttributes": True, "GeometryImportCadAttributesFilter": "", "GeometryImportNamedSelections": True, "GeometryImportNamedSelectionsFilter": "", "GeometryImportMaterialProperties": True, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": True, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": True, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "3ec553d2-dc97-4073-ad4b-73cf93881616", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": False, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$1896a6fd-8886-4e09-a689-f1b5fd2ffc7f": {"FilePathInDM": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/original-files/carrosserie3.igs", "FilePathAfterRepair": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/original-files/carrosserie3.igs", "IsFileRepaired": False, "CadSourceType": "Iges"}, "$$13e6ed53-2208-4f4d-a7c4-874c996d1791": {"FilePathInDM": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/UrbanTwo_files/dp0/Geom/DM/Geom.agdb", "FilePathAfterRepair": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/UrbanTwo_files/dp0/Geom/DM/Geom.agdb", "IsFileRepaired": False, "CadSourceType": "DesignModeler"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
         <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
       </Object>
-      <Object Name="/Geometry/TransferData:Geometry" Version="1.0">
-        <class-type valType="String">TransferData</class-type>
-        <object-name valType="String">Geometry</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["6add85ef-4858-4218-9059-60ac89c9d04b"], "Data": $$ad960bff-a981-4942-b99e-bee030174e04}</member-data>
-      </Object>
     </Container>
     <Container Name="Geometry 1" Version="1.0">
       <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">1836</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2324, "Input": 1774, "Output": 1774}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3468, "Input": 1774, "Output": 1774}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Scopes": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Geometry": 1743, "Geometry 1": 0}</last-update-regen-times>
       <unique-system-dir valType="String">Geom-1</unique-system-dir>
@@ -69,9 +64,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">2299</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 2298, "Input": 2268, "Output": 2268}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2105, "Geometry 1": 1836, "Mesh": 0, "Setup": 0, "Solution": 0, "Results": 0}</last-update-regen-times>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3306, "Input": 3306, "Output": 3306}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"MechanicalModel": 3302, "MechanicalMesh": 3302}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2105, "Geometry 1": 1836, "Mesh": 2299, "Setup": 2308, "Solution": 0, "Results": 0, "Geometry 4": 3292}</last-update-regen-times>
       <unique-system-dir valType="String">FFF</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Mesh/SimulationConnection:SimulationConnection" Version="1.0">
@@ -99,7 +94,7 @@
               <Name valType="String">FluentMesh</Name>
               <Guid0 valType="String">759b3a0e-459f-467e-a0a8-89e3d87b0096</Guid0>
               <Data valType="String">eacf66da-be2c-4f89-bcc3-362a3244a890</Data>
-              <UpToDate valType="String">True</UpToDate>
+              <UpToDate valType="String">False</UpToDate>
               <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "Data": System.String, "UpToDate": System.Boolean}</value-keys>
             </FluentMesh>
           </transferDataMap>
@@ -128,7 +123,7 @@
       <Object Name="/Mesh/ContainerConnections:ModelContainerConnections" Version="1.0">
         <class-type valType="String">ContainerConnections</class-type>
         <object-name valType="String">ModelContainerConnections</object-name>
-        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry": {"$$ad960bff-a981-4942-b99e-bee030174e04": {"Geometry": ["6add85ef-4858-4218-9059-60ac89c9d04b"]}}}}</member-data>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry 4": {"$$ea56d2c5-d667-419e-8103-0c04171a9f26": {"Geometry": ["0bd352e6-7cc5-4bf4-9001-c6919a54d95f"]}}}}</member-data>
       </Object>
       <Object Name="/Mesh/MechanicalModel:MechanicalModel" Version="1.0">
         <class-type valType="String">MechanicalModel</class-type>
@@ -148,6 +143,19 @@
         <class-type valType="String">MechanicalMeshFile</class-type>
         <object-name valType="String">FluentMesh</object-name>
         <member-data valType="String">{"DisplayText": "FluentMesh", "TransferFile": $$522fe36a-cd96-49e8-8969-f6e739b4d868}</member-data>
+      </Object>
+      <Object Name="/Mesh/ParameterAdapter1:c4be9aa9-c1bf-11e8-8d5e-20cf301d6507" Version="1.0">
+        <class-type valType="String">Ansys.Meshing.Core.DataModel.Parameters.DynamicParameterObject, Ans.Meshing.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataObjects.ParameterAdapterTypeSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "JournalVariableName": "parameterAdapter1", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "Value": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "75.1494675821675 [m^3]", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Volume"}, "WorkbenchParameterId": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "Access": {"SpecType": "Ansys.Core.DataSpecs.EnumSpec`1[[Ansys.Meshing.Core.DataModel.Parameters.ParameterAccess, Ans.Meshing.Core]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "OptionLabels": "SimulationParameterInput, SimulationParameterOutput", "ShouldTranslateOptionLabels": True}, "Type": {"SpecType": "Ansys.Core.DataSpecs.EnumSpec`1[[Ansys.Meshing.Core.DataModel.Parameters.ParameterType, Ans.Meshing.Core]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "OptionLabels": "SimulationParameterDouble, SimulationParameterInteger, SimulationParameterString, SimulationParameterBool", "ShouldTranslateOptionLabels": True}, "Name": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "FolderDSId": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": -1, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 2147483647}, "FrameworkParameterReference": {"SpecType": "Ansys.Core.DataModel.DataReferenceSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "ParameterAdapter1,ParameterAdapter,DataEntity"}</type-spec>
+        <object-name valType="String">c4be9aa9-c1bf-11e8-8d5e-20cf301d6507</object-name>
+        <member-data valType="String">{"DisplayText": "c4be9aa9-c1bf-11e8-8d5e-20cf301d6507", "Value": "75.1494675821675 [m^3]", "WorkbenchParameterId": "c4be9aa9-c1bf-11e8-8d5e-20cf301d6507", "Access": "SimulationParameterOutput", "Type": "SimulationParameterDouble", "Name": "Geometry Volume", "FolderDSId": 10, "FrameworkParameterReference": $$7297ab4f-293b-4ca1-b8d1-f58de7a71ba9}</member-data>
+        <custom-data>
+          <ParamDataRef valType="String">7297ab4f-293b-4ca1-b8d1-f58de7a71ba9</ParamDataRef>
+          <IsParameterValueModified valType="String">False</IsParameterValueModified>
+          <value-keys valType="String">{"ParamDataRef": System.String, "IsParameterValueModified": System.Boolean}</value-keys>
+          <dictionary-keys valType="String">[Attributes]</dictionary-keys>
+          <Attributes />
+        </custom-data>
       </Object>
     </Container>
     <Container Name="Setup" Version="1.0">
@@ -255,6 +263,28 @@
         <class-type valType="String">SolutionDataLink</class-type>
         <object-name valType="String">SolutionDataProvider</object-name>
         <member-data valType="String">{"DisplayText": "SolutionDataProvider", "Entity": $$dd45c4ee-fb48-40d3-aa8e-51a58d628b10, "DataType": "FluentSolution", "ConnectionKey": "3dd42f47-866d-4335-a8b6-500e3652a42e", "RefreshTimestamp": 0, "ID": 1, "SecondID": 2, "DataEntityType": "FluentSolution", "SystemName": "", "LastFilename": {}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Geometry 4" Version="1.0">
+      <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">3292</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3470, "Input": 3462, "Output": 3462}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2105, "Geometry 1": 1836, "Mesh": 2299, "Setup": 2308, "Solution": 0, "Results": 0, "Geometry 4": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">Geom-3</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Geometry 4/Geometry:GeometryDataObject" Version="1.0">
+        <class-type valType="String">Geometry</class-type>
+        <object-name valType="String">GeometryDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": "dp0/Geom-3/DM/Geom-3.agdb", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": $$456e1959-81cd-4213-a31a-b3c32bad4505, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": True, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "", "GeometryImportCadAttributes": True, "GeometryImportCadAttributesFilter": "", "GeometryImportNamedSelections": True, "GeometryImportNamedSelectionsFilter": "", "GeometryImportMaterialProperties": True, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": True, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": True, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportSpaceClaimExplodeUnsharedComponents": False, "Guid": "2766b849-d66b-436b-bd8d-429b9c69a5fb", "ObjectState": 5, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": False, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$456e1959-81cd-4213-a31a-b3c32bad4505": {"FilePathInDM": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/UrbanTwo_files/dp0/Geom-3/DM/Geom-3.agdb", "FilePathAfterRepair": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/UrbanTwo_files/dp0/Geom-3/DM/Geom-3.agdb", "IsFileRepaired": False, "CadSourceType": "DesignModeler"}, "$$1896a6fd-8886-4e09-a689-f1b5fd2ffc7f": {"FilePathInDM": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/original-files/carrosserie3.igs", "FilePathAfterRepair": "/media/cart3sianbear/InternalStorage/Documents/ENSEM/PFE/urban-two/original-files/carrosserie3.igs", "IsFileRepaired": False, "CadSourceType": "Iges"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Geometry 4/TransferData:Geometry" Version="1.0">
+        <class-type valType="String">TransferData</class-type>
+        <object-name valType="String">Geometry</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["0bd352e6-7cc5-4bf4-9001-c6919a54d95f"], "Data": $$ea56d2c5-d667-419e-8103-0c04171a9f26}</member-data>
       </Object>
     </Container>
   </Containers>

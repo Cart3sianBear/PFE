@@ -1,0 +1,30 @@
+# encoding: utf-8
+# Release 19.1
+SetScriptVersion(Version="19.1.103")
+template1 = GetTemplate(
+    TemplateName="Fluid Flow",
+    Solver="CFX")
+system1 = GetSystem(Name="FFF")
+system2 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+system3 = GetSystem(Name="Geometry")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+meshComponent1 = system2.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system2.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+mesh1.Edit()
+Save(Overwrite=True)
+mesh1.Exit()
+meshComponent1.Update(AllDependencies=True)
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+setup1.Exit()
+Save(Overwrite=True)
