@@ -1,0 +1,14 @@
+# encoding: utf-8
+# Release 19.1
+SetScriptVersion(Version="19.1.103")
+system1 = GetSystem(Name="SYS")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+system2 = GetSystem(Name="Geometry")
+system3 = GetSystem(Name="Geom")
+system2.Move(
+    Position="Below",
+    RelativeTo=system3)
+Save(Overwrite=True)
